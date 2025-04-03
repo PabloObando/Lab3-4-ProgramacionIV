@@ -1,7 +1,10 @@
 
-export default function WelcomeWidget(props){
+export default function WelcomeWidget(){
+
+    const { user } = useContext(AuthContext)
+    
 
     return(
-        <h2>Welcome to our site (props.email)</h2>
+        <h2>Welcome to our site (email)</h2>
     )
 }
